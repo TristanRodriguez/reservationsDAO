@@ -3,24 +3,26 @@
  * 2.	Créer une fonction de recherche d'un lieu précis
  * SimpleXMLElement getLieu(SimpleXMLElement xml, String id)
  * Ex.: print_r( getLieu($xml,'espacemagh') );
+ * 
+ * @author Tristan
+ * @version 1.0
  */
 
-//Connecter
-$pdo = new PDO("mysql:host=localhost;dbname=reservations","root","");   //var_dump($pdo);
+// Charger le fichier XML
+$xml = simplexml_load_file('../../data/reservations.xml');
 
-//Préparer
-$query = "SELECT * FROM `lieux`";
+function getLieu(SimpleXMLElement $xml, string $id) {
 
-//Envoyer
-$stmt = $pdo->query($query);
+    foreach($xml->lieu as $lieu) {
 
-//Extraire
-$data = $stmt->fetchAll(PDO::FETCH_ASSOC);         //var_dump($data);
+        if((string) $id == (string)$lieu["id"]) {
 
-//Libérer
-$stmt->closeCursor();
+            return $lieu;
+        }
+    }
 
-//Déconnecter
-$pdo = null;
+    return "Ce lieu n'existe pas !";
+}
 
-function getLieu()
+print_r(getLieu($xml,"dexia"));
+print_r(getLieu($xml,"BBL"));
