@@ -1,6 +1,6 @@
 <?php
 /**
- * 4.   Afficher l'image des spectacles
+ * 5.   Afficher les spectacles dont le scenographe est aussi le distributeur
  * 
  * @author Tristan
  * @version 1.0
@@ -40,7 +40,7 @@ $pdo = null;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Série 3 Ex 04</title>
+    <title>Série 3 Ex 05</title>
 </head>
 <body>
     <h1>Scenographie et distribution</h1>

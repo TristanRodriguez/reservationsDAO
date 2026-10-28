@@ -1,6 +1,6 @@
 <?php
 /**
- * 4.   Afficher l'image des spectacles
+ * 4.   Afficher les spectacles dont le scenographe est aussi le distributeur
  * 
  * @author Tristan
  * @version 1.0
