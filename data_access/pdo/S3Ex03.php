@@ -35,7 +35,7 @@ $pdo = null;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Série 3 Ex 02</title>
+    <title>Série 3 Ex 03</title>
 </head>
 <body>
     <h1>Id des spectacles réservable</h1>
