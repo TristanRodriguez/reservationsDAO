@@ -32,7 +32,7 @@ $pdo = null;
     <title>Série 1 Ex2</title>
 </head>
 <body>
-    <h1>Lieu</h1>
+    <h1>Nom</h1>
     <div><?=  $data["nom"] ?></div>
 </body>
 </html>
