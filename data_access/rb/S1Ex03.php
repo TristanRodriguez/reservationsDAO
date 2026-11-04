@@ -6,7 +6,7 @@
  * @version 1.0
  */
 
- require '../../rb.php';
+require '../../rb.php';
 
 //Connecter
 R::setup("mysql:host=localhost;dbname=reservations","root","");

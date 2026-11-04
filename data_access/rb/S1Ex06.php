@@ -26,7 +26,7 @@ $spectacles = R::findAll("spectacles","WHERE reservable=0" );
     <table>
         <thead>
             <tr>
-                <th>Spectacles réservables</th>
+                <th>Spectacles non réservables</th>
             </tr>
         </thead>
         <tbody>
