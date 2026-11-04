@@ -16,7 +16,7 @@ INNER JOIN reservations AS r
     ON p.id = r.id_personne
 INNER JOIN representations AS rep
     ON r.id_representation = rep.id
-WHERE rep.id = 1";
+LIMIT = 1";
 
 //Envoyer
 $stmt = $pdo->query($query);

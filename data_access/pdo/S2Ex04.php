@@ -19,7 +19,7 @@ function getReservables(SimpleXMLElement $xml) {
 
         if($spectacle["reservable"] == 1) {
 
-            array_push($tabReservables, $spectacle->title);
+            array_push($tabReservables, $spectacle->title);  // Attention tout les spectacles donc $spectacle tout cours (objet)
         }
     }
 

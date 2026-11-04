@@ -20,8 +20,8 @@ $data = $stmt->fetchAll(PDO::FETCH_ASSOC);         //var_dump($data);
 
 // Récupère l'id des spectacles réservable
 $tabId = [];
-foreach($data as $id) {
-    array_push($tabId, $id);
+foreach($data as $row) {
+    array_push($tabId, $row);
 }
 
 //Libérer

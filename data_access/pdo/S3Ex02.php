@@ -10,21 +10,13 @@
 $pdo = new PDO("mysql:host=localhost;dbname=reservations","root","");   //var_dump($pdo);
 
 //Préparer
-$query = "SELECT designation FROM `lieux`";
+$query = "SELECT designation FROM `lieux` OFFSET 1";
 
 //Envoyer
 $stmt = $pdo->query($query);
 
 //Extraire
-$data = $stmt->fetchAll(PDO::FETCH_ASSOC);         //var_dump($data);
-
-// Récupère le troisième lieu
-$lieu = "";
-for($i=0;$i<sizeof($data);$i++) {
-    if($i === 1) {
-        $lieu = $data[$i];
-    }
-}
+$lieu = $stmt->fetchAll(PDO::FETCH_ASSOC);         //var_dump($data);
 
 //Libérer
 $stmt->closeCursor();

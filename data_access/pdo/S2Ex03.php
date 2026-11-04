@@ -17,11 +17,13 @@ function getLieuInfo(SimpleXMLElement $xml, string $id, string $info) {
     foreach($xml->lieu as $lieu) {
 
         // Condition si les id correspond
-        if((string)$lieu['id'] == (string)$id) {
+        if((string)$lieu['id'] == $id) {
 
             if(!empty((string)$lieu->{$info})) {
                 
                 return (string)$lieu->{$info};
+            } else {
+                return "propriété inexistante";
             }
         }
     }

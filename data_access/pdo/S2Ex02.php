@@ -15,7 +15,7 @@ function getLieu(SimpleXMLElement $xml, string $id) {
 
     foreach($xml->lieu as $lieu) {
 
-        if((string) $id == (string)$lieu["id"]) {
+        if($id == (string)$lieu["id"]) {
 
             return $lieu;
         }

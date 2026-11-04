@@ -10,7 +10,7 @@
 $pdo = new PDO("mysql:host=localhost;dbname=reservations","root","");   //var_dump($pdo);
 
 //Préparer
-$query = "SELECT designation, website FROM `lieux`";
+$query = "SELECT designation, website FROM `lieux`"; // ou WHERE website = '' plus simple
 
 //Envoyer
 $stmt = $pdo->query($query);
