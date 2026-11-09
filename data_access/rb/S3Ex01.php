@@ -19,7 +19,7 @@ $personnes = R::findAll("personnes");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Série 1 Ex4</title>
+    <title>Série 3 Ex1</title>
 </head>
 <body>
     <table>
