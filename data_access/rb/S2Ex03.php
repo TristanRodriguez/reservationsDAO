@@ -37,4 +37,4 @@ function getLieuInfo(array $lieux, string $id, string $info): string {
 
 echo "<p>" . getLieuInfo($lieux, "dexia", "designation") . "</p>";
 echo "<p>" . getLieuInfo($lieux, "dexia", "website") . "</p>";
-echo "<p>" . getLieuInfo($lieux, "dexia", "BBL") . "</p>";
+echo "<p>" . getLieuInfo($lieux, "dexia", "adresse") . "</p>";
